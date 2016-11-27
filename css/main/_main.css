@@ -1,0 +1,91 @@
+@font-face {
+  font-family: _Josefin_Sans_;
+  src: url("../fonts/JosefinSans-Regular.ttf"); }
+@font-face {
+  font-family: _Gentleman_Rainbow_;
+  src: url("../fonts/GentlemanRainbow-Regular.ttf"); }
+body#background_image {
+  background-image: url("../../images/viewMaster_bg.jpg");
+  background-size: cover; }
+body * {
+  box-sizing: border-box;
+  transition: border-color 2s; }
+
+.default_values, .first_screen .mediaContainer, .first_screen .mediaContainer .head, .first_screen .mediaContainer .form {
+  width: 100%;
+  height: 100%;
+  float: none;
+  position: relative; }
+
+input.error {
+  border-color: red !important; }
+
+.first_screen {
+  width: 100%;
+  height: auto;
+  float: none;
+  position: relative;
+  padding: 10px;
+  text-align: -webkit-center; }
+  .first_screen .mediaContainer {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: rgba(233, 235, 240, 0.8);
+    border: 3px solid #e6e6e6;
+    border-radius: 5px; }
+    .first_screen .mediaContainer .head {
+      height: 180px;
+      padding: 5px;
+      overflow: hidden; }
+      .first_screen .mediaContainer .head .title {
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+        display: table;
+        overflow: hidden;
+        text-align: center; }
+        .first_screen .mediaContainer .head .title h1 {
+          font-family: _Gentleman_Rainbow_;
+          font-size: 80px;
+          letter-spacing: 10px;
+          margin: 0;
+          display: table-cell;
+          vertical-align: middle; }
+      .first_screen .mediaContainer .head .subtitle {
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+        display: table;
+        overflow: hidden;
+        text-align: center; }
+        .first_screen .mediaContainer .head .subtitle h1 {
+          font-family: _Josefin_Sans_;
+          font-size: 18px;
+          margin: 0;
+          display: table-cell;
+          vertical-align: middle; }
+    .first_screen .mediaContainer .form {
+      height: auto;
+      padding: 10px;
+      overflow: hidden; }
+      .first_screen .mediaContainer .form form {
+        width: 100%;
+        display: table;
+        padding: 0 30px; }
+        .first_screen .mediaContainer .form form input {
+          display: table-row;
+          width: 100%;
+          height: 35px;
+          margin: 5px 0;
+          border-radius: 5px;
+          border: 1px solid #e6e6e6;
+          font-family: _Josefin_Sans_; }
+        .first_screen .mediaContainer .form form input[type="submit"] {
+          background-color: #FB2022;
+          border: 1px solid #FB0B0B;
+          color: white;
+          font-weight: 700;
+          font-size: 20px; }
+
+/*# sourceMappingURL=_main.css.map */

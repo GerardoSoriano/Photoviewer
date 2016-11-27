@@ -1,0 +1,21 @@
+body{
+  &#background_image{
+    background-image: url("../../images/viewMaster_bg.jpg");
+    background-size: cover;
+  }
+  *{
+    box-sizing: border-box;
+    transition: border-color 2s;
+  }
+}
+
+.default_values{
+  width: 100%;
+  height: 100%;
+  float: none;
+  position: relative;
+}
+
+input.error{
+  border-color: red !important; 
+}
