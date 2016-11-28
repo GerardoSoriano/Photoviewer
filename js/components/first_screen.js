@@ -1,3 +1,5 @@
+var password;
+
 $(document).ready(function(){
 
   $(".element").change(function(){
@@ -80,8 +82,23 @@ function validateDatos(e){
     case "email":
       regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
       break;
+    case "fullname":
+      regExp = /^[a-zA-Z\s]+$/;
+      break;
+    case "username":
+      regExp = /^[a-zA-Z0-9_.-]+$/;
+      break;
     case "password":
       regExp = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}/;
+      password = $(e).val();
+      break;
+    case "confirmPassword":
+      if ($(e).val() === password) {
+        return true;
+      }else {
+        console.log($(e).val() + "\n" + password);
+        return alert("Las contraseñas no coinciden");
+      }
       break;
     default:
   }
