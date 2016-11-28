@@ -19,30 +19,47 @@
       </div>
     </div>
     <div class="content">
-      <div class="userProfile">
-        <div class="mediaContainer">
-          <div class="imageCover">
-            <img src="../images/cover.jpg" alt="">
-          </div>
-          <div class="imageProfile">
-            <img src="../images/profile.jpg" alt="">
-          </div>
-          <div class="text">
-            <div class="fullname">
-
+      <div class="leftContent">
+        <div class="userProfile">
+          <div class="mediaContainer">
+            <div class="imageCover">
+              <img src="../images/cover.jpg" alt="">
             </div>
-            <div class="username">
-
+            <div class="imageProfile">
+              <img src="../images/profile.jpg" alt="">
+            </div>
+            <div class="text">
+              <div class="fullname">
+                <h1>Gerardo Soriano</h1>
+              </div>
+              <div class="username">
+                <h1>gerardosoriano97</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uploadPhoto">
+          <div class="mediaContainer">
+            <div class="displayForm">
+              <input type="button" name="UploadPhoto" value="Subir foto">
+            </div>
+            <div class="form">
+              <form action="index.html" method="post" enctype="multipart/form-data">
+                <textarea name="description" class="contentUploaded" rows="5" maxlength="255" placeholder="Escribe una descripción"></textarea>
+                <label for="photo"><span>icono prro</span></label>
+                <input type="file" class="contentUploaded" name="photo" id="photo">
+                <input type="button" value="Cancelar">
+                <input type="submit" value="Subir">
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="uploadPhoto">
+      <div class="rightContent">
+        <div class="contentPictures">
+          <div class="imageCard">
 
-      </div>
-      <div class="contentPictures">
-        <div class="imageCard">
-
+          </div>
         </div>
       </div>
     </div>

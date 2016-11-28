@@ -5,7 +5,8 @@
   font-family: _Gentleman_Rainbow_;
   src: url("../fonts/GentlemanRainbow-Regular.ttf"); }
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #f3f3f3; }
   body#background_image {
     background-image: url("../../images/viewMaster_bg.jpg");
     background-size: cover; }
@@ -13,7 +14,7 @@ body {
     box-sizing: border-box;
     transition: border-color 2s, height 2s; }
 
-.default_values, .first_screen .mediaContainer, .first_screen .mediaContainer .head, .first_screen .mediaContainer .form, .header, .header .mediaContainer, .header .mediaContainer .image {
+.default_values, .first_screen .mediaContainer, .first_screen .mediaContainer .head, .first_screen .mediaContainer .form, .header, .header .mediaContainer, .header .mediaContainer .image, .userProfile .mediaContainer, .userProfile .mediaContainer .imageCover, .userProfile .mediaContainer .text, .userProfile .mediaContainer .text .fullname, .userProfile .mediaContainer .text .username, .uploadPhoto .mediaContainer, .uploadPhoto .mediaContainer .displayForm {
   width: 100%;
   height: 100%;
   float: none;
@@ -21,6 +22,25 @@ body {
 
 input.error {
   border-color: red !important; }
+
+.content {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+  .content .leftContent {
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    height: auto;
+    float: left;
+    padding: 10px; }
+  .content .rightContent {
+    width: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    height: auto;
+    float: left;
+    padding: 10px; }
 
 .first_screen {
   width: 100%;
@@ -107,10 +127,122 @@ input.error {
         width: auto;
         height: auto;
         max-height: 100%; }
-    .header .mediaContainer .text h1 {
-      font-family: _Gentleman_Rainbow_;
-      font-size: 100px;
-      letter-spacing: 10px;
-      margin: 0; }
+    .header .mediaContainer .text {
+      height: 100%; }
+      .header .mediaContainer .text h1 {
+        font-family: _Gentleman_Rainbow_;
+        font-size: 100px;
+        letter-spacing: 10px;
+        margin: 0;
+        max-height: 100%; }
+
+.userProfile {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 250px;
+  min-height: 250px;
+  max-height: 250px;
+  position: relative;
+  float: left;
+  margin-bottom: 10px; }
+  .userProfile .mediaContainer {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid #dddddd;
+    border-radius: 10px; }
+    .userProfile .mediaContainer .imageCover {
+      height: 70%;
+      max-height: 70%;
+      overflow: hidden; }
+      .userProfile .mediaContainer .imageCover img {
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        max-width: 100%; }
+    .userProfile .mediaContainer .imageProfile {
+      width: 100px;
+      max-width: 100px;
+      height: 100px;
+      max-height: 100px;
+      border: 2px solid white;
+      border-radius: 50%;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 10px;
+      z-index: 1; }
+      .userProfile .mediaContainer .imageProfile img {
+        width: auto;
+        height: auto;
+        max-width: 100%; }
+    .userProfile .mediaContainer .text {
+      height: 30%;
+      padding-left: 30%;
+      background-color: white; }
+      .userProfile .mediaContainer .text .fullname {
+        height: 50%; }
+        .userProfile .mediaContainer .text .fullname h1 {
+          font-family: _Josefin_Sans_;
+          font-size: 20px;
+          margin: 0; }
+      .userProfile .mediaContainer .text .username {
+        height: 50%; }
+        .userProfile .mediaContainer .text .username h1 {
+          font-family: _Josefin_Sans_;
+          font-size: 20px;
+          margin: 0; }
+
+.uploadPhoto {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .uploadPhoto .mediaContainer .displayForm {
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .uploadPhoto .mediaContainer .displayForm input {
+      font-family: _Josefin_Sans_;
+      background-color: rgba(206, 38, 63, 0.8);
+      border: 1px solid black;
+      border-radius: 5px;
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      width: 100%;
+      height: 75px; }
+      .uploadPhoto .mediaContainer .displayForm input:hover {
+        background-color: rgba(250, 38, 63, 0.8); }
+  .uploadPhoto .mediaContainer .form form textarea {
+    font-family: _Josefin_Sans_;
+    width: 100%;
+    resize: none; }
+  .uploadPhoto .mediaContainer .form form label {
+    width: 100px;
+    height: 100px;
+    display: table;
+    text-align: center;
+    float: left;
+    background-color: #CCC;
+    border: 1px solid black;
+    border-radius: 5px; }
+    .uploadPhoto .mediaContainer .form form label:hover {
+      background-color: #DDD; }
+    .uploadPhoto .mediaContainer .form form label span {
+      display: table-cell;
+      vertical-align: middle; }
+  .uploadPhoto .mediaContainer .form form input {
+    font-family: _Josefin_Sans_;
+    color: white;
+    width: 80px;
+    height: 40px;
+    background-color: rgba(60, 115, 180, 0.8);
+    float: right;
+    border: 2px solid rgba(60, 115, 160, 0.8);
+    border-radius: 5px; }
+    .uploadPhoto .mediaContainer .form form input:hover {
+      background-color: rgba(60, 115, 250, 0.8); }
+    .uploadPhoto .mediaContainer .form form input[type="file"] {
+      display: none; }
 
 /*# sourceMappingURL=_main.css.map */
