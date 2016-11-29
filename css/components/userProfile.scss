@@ -14,6 +14,7 @@
     max-height: 100%;
     border: 2px solid #dddddd;
     border-radius: 10px;
+    overflow: hidden;
     .imageCover{
       @extend .default_values;
       height: 70%;

@@ -1,6 +1,7 @@
 body{
   margin: 0;
   background-color: #f3f3f3;
+  display: flex;
   &#background_image{
     background-image: url("../../images/viewMaster_bg.jpg");
     background-size: cover;
