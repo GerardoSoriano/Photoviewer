@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/components/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main/_main.css">
     <script src="../js/components/jquery.js" charset="utf-8"></script>
+    <script src="../js/components/login.js" charset="utf-8"></script>
     <!--script src="../js/components/header.js" charset="utf-8"></script-->
   </head>
   <body>
@@ -46,11 +47,13 @@
             </div>
             <div class="form">
               <form action="index.html" method="post" enctype="multipart/form-data">
-                <textarea name="description" class="contentUploaded" rows="5" maxlength="255" placeholder="Escribe una descripción"></textarea>
-                <label for="photo"><span class="fa fa-camera"></span></label>
-                <input type="file" class="contentUploaded" name="photo" id="photo">
-                <input type="button" value="Cancelar">
-                <input type="submit" value="Subir">
+                <fieldset>
+                  <textarea name="description" class="contentUploaded" rows="5" maxlength="255" placeholder="Escribe una descripción"></textarea>
+                  <label for="photo"><span class="fa fa-camera"></span></label>
+                  <input type="file" class="contentUploaded" name="photo" id="photo">
+                  <input type="button" value="Cancelar">
+                  <input type="submit" value="Subir">
+                </fieldset>
               </form>
             </div>
           </div>
