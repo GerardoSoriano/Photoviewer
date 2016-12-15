@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+  display: flex; }
+  body#background_image {
+    background-image: url("../../images/viewMaster_bg.jpg");
+    background-size: cover; }
+  body * {
+    box-sizing: border-box;
+    transition: border-color 2s, height 2s; }
+
+.default_values, .imageCard .mediaContainer {
+  width: 100%;
+  height: 100%;
+  float: none;
+  position: relative; }
+
+input.error {
+  border-color: red !important; }
+
+.content {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+  .content .leftContent {
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    height: auto;
+    float: left;
+    padding: 10px; }
+  .content .rightContent {
+    width: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    height: auto;
+    float: left;
+    padding: 10px; }
+
+@font-face {
+  font-family: _Josefin_Sans_;
+  src: url("../../fonts/JosefinSans-Regular.ttf"); }
+@font-face {
+  font-family: _Gentleman_Rainbow_;
+  src: url("../../fonts/GentlemanRainbow-Regular.ttf"); }
+.imageCard {
+  width: 618px;
+  min-width: 618px;
+  max-width: 618px;
+  height: 400px;
+  min-height: 400px;
+  max-height: 400px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  padding-bottom: 6px;
+  margin-bottom: 10px; }
+  .imageCard .mediaContainer {
+    background-color: white;
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap; }
+    .imageCard .mediaContainer .head {
+      width: 100%;
+      height: 20%;
+      overflow: hidden;
+      flex: none;
+      display: flex;
+      align-items: center; }
+      .imageCard .mediaContainer .head .imageProfile {
+        width: 75px;
+        max-width: 75px;
+        height: 75px;
+        overflow: hidden;
+        border: 2px solid white;
+        border-radius: 50%;
+        flex-grow: 2; }
+        .imageCard .mediaContainer .head .imageProfile img {
+          width: auto;
+          height: auto;
+          max-width: 100%; }
+      .imageCard .mediaContainer .head h1 {
+        flex-grow: 2; }
+      .imageCard .mediaContainer .head span {
+        flex-grow: 1; }
+    .imageCard .mediaContainer .icons {
+      width: 20%;
+      height: 80%;
+      display: inline-block;
+      float: left;
+      text-align: center; }
+      .imageCard .mediaContainer .icons ul {
+        margin: 0;
+        padding: 0;
+        height: 100%; }
+        .imageCard .mediaContainer .icons ul li {
+          list-style: none;
+          width: 100%;
+          height: 25%;
+          display: table; }
+          .imageCard .mediaContainer .icons ul li span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 30px;
+            color: #333; }
+            .imageCard .mediaContainer .icons ul li span:hover {
+              color: #555; }
+    .imageCard .mediaContainer .image {
+      width: 80%;
+      height: 80%;
+      display: inline-block;
+      float: left;
+      overflow: hidden;
+      text-align: center;
+      background-color: #f3f3f3;
+      border: 2px solid #e3e3e3;
+      border-radius: 5px; }
+      .imageCard .mediaContainer .image img {
+        width: auto;
+        height: auto;
+        min-height: 100%;
+        max-height: 100%; }
+
+/*# sourceMappingURL=_imageCard.css.map */
