@@ -40,36 +40,59 @@
           height: auto;
           max-width: 100%;
         }
-      }
+      };
       h1{
+        color: #333;
         flex-grow: 2;
+        font-family: _Josefin_Sans_;
+        user-select: none;
+        &:hover{
+          text-decoration: underline;
+          cursor: pointer;
+        }
       }
-      span{
+      >span{
         flex-grow: 1;
+        text-align: right;
+        font-size: 30px;
+        padding: 0 10px;
+        color: #333;
+        &:hover{
+          color: #999;
+        }
       }
     }
     .icons{
       width: 20%;
       height: 80%;
-      display: inline-block;
-      float: left;
-      text-align: center;
+      display: flex;
+      flex: none;
       ul{
         margin: 0;
         padding: 0;
-        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         li{
           list-style: none;
           width: 100%;
-          height: 25%;
-          display: table;
+          flex: none;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
           span{
-            display: table-cell;
-            vertical-align: middle;
+            flex: none;
+            width: 100%;
             font-size: 30px;
             color: #333;
-            &:hover{
-              color: #555;
+            &.fa:hover{
+              color: #999;
+            }
+            &.comments,&.likes{
+              cursor: default;
+              user-select: none;
+              font-family: _Josefin_Sans_;
             }
           }
         }
@@ -78,13 +101,12 @@
     .image{
       width: 80%;
       height: 80%;
-      display: inline-block;
-      float: left;
       overflow: hidden;
       text-align: center;
       background-color: #f3f3f3;
       border: 2px solid #e3e3e3;
       border-radius: 5px;
+      flex: none;
       img{
         width: auto;
         height: auto;
